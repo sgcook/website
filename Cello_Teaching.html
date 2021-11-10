@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cello Teaching Sara Cook</title>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <link rel="stylesheet" href="Style\Cello_Teaching.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="wrap">
+      <ul class="topnav" id="myTopnav">
+        <li>
+          <a href="./index.html" class="top-left" id="Sara">Sara Cook</a>
+        </li>
+        <li>
+          <a href="./Alexander_Technique.html">Alexander Technique</a>
+        </li>
+        <li>
+          <a href="./Bio.html">Bio</a>
+        </li>
+        <li>
+          <a id="hidePage" href="./Cello_Teaching.html">Cello Teaching</a>
+        </li>
+        <li>
+          <a href="./Contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="./Media.html">Media</a>
+        </li>
+        <div>
+          <div class="container" onclick="showNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </ul>
+
+      <script>
+        function showNav() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+
+      <section>
+        <h2>Cello Teaching</h2>
+
+        <img src="Images\Snapseed 6.1.jpg" alt="Sara with cello" />
+        <section class="writing">
+          <p class="celloTeaching">
+            I have taught cellists of all ages and believe anyone at any age is
+            capable of learning the cello. As a teacher, I adjust every lesson
+            to fit each student’s needs at the time. Lessons are fun and
+            challenging. I offer 30-minute, 45-minute, and one hour lessons,
+            both over the internet and face-to-face. I will often pair younger
+            students with a method book and other supplementary materials. More
+            advanced students may choose to focus on specific repertoire.
+          </p>
+          <p class="celloTeaching">
+            I encourage my students to spearhead their learning and to be
+            inquisitive problem-solvers. My students will not only strive for
+            technical mastery of the instrument, but also to craft their own
+            musical voice. In addition, I utilize many Alexander Technique
+            principles in my cello teaching. My students should not only be
+            wonderful cellists, but also be able to play with freedom and
+            without pain. I also teach music theory, ear training, and
+            improvisation. At whatever age or skill level, my students will come
+            away with a passion for the cello and classical music.
+          </p>
+        </section>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; Sara Cook</p>
+    </footer>
+  </body>
+</html>

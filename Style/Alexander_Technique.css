@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.topnav {
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-weight: 600;
+}
+
+.topnav a {
+  position: relative;
+  display: block;
+  font-size: 2vw;
+  padding: 2.5vw 1.3vw 2vw 1.6vw;
+  text-decoration: none;
+  color: black;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.top-left {
+  position: relative;
+  display: block;
+  padding: 0;
+  left: -8vw;
+  top: 0.5vw;
+  text-decoration: none;
+  font-size: 4.5vw;
+  font-weight: 600;
+  color: black;
+}
+
+h2 {
+  position: relative;
+  display: block;
+  top: 2vh;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3.7vw;
+}
+
+.photoAT {
+  position: relative;
+  display: block;
+  top: 10vw;
+  float: right;
+  padding: 0 2vw 14vw 0;
+  width: 44%;
+  height: auto;
+}
+
+.AT {
+  position: relative;
+  display: block;
+  float: left;
+  width: 50%;
+  top: 4vw;
+  line-height: 1.6;
+  text-align: justify;
+  font-weight: 600;
+  font-size: 1.4vw;
+  padding-left: 1vw;
+}
+
+.aboutHeadAT {
+  font-size: 2vw;
+}
+
+.aboutAT {
+  margin-bottom: 1.2vw;
+}
+
+.testimonial {
+  position: relative;
+  border: 1px solid #ccc;
+  display: block;
+  clear: both;
+  text-align: justify;
+  top: 10vw;
+  margin: 0 1vw;
+  font-weight: 600;
+}
+
+.testHead {
+  font-size: 2vw;
+  padding-left: 1.4vw;
+}
+
+.test {
+  font-size: 1.4vw;
+  margin: 1.4vw;
+}
+
+.footer {
+  margin-top: auto;
+  font-size: 1.2vw;
+  background-color: white;
+  width: 100%;
+  white-space: nowrap;
+  padding-top: 12vw;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  /*Menu icon */
+  .container {
+    position: absolute;
+    display: block;
+    right: 0.5rem;
+    cursor: pointer;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+  }
+
+  /*navbar*/
+  .topnav a:not(.top-left) {
+    display: none;
+  }
+
+  .topnav a.top-left {
+    position: relative;
+    left: -30vw;
+    top: 0.5rem;
+    font-size: 12vw;
+  }
+
+  h2 {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 9.2vw;
+    top: 2vw;
+  }
+
+  .photoAT {
+    position: relative;
+    display: block;
+    padding: none;
+    float: none;
+    width: 83%;
+    margin: 0 auto;
+    top: 7vw;
+  }
+
+  .aboutHeadAT {
+    font-size: 6vw;
+    padding-bottom: 2vw;
+  }
+
+  .aboutAT {
+    padding: 0 2vw 7vw 2vw;
+  }
+
+  .AT {
+    position: relative;
+    display: block;
+    float: none;
+    width: 86%;
+    margin: 0 auto;
+    text-align: center;
+    top: 2vw;
+    font-size: 3.5vw;
+    line-height: 6vw;
+  }
+
+  .testimonial {
+    display: block;
+    width: 76%;
+    margin: 0 auto;
+  }
+
+  .testHead {
+    font-size: 6vw;
+    text-align: center;
+    padding-top: 2vw;
+  }
+
+  .test {
+    font-size: 3.5vw;
+    text-align: center;
+    padding: 0 2vw 2vw 2vw;
+  }
+
+  /*footer*/
+  .footer {
+    padding-top: 20vw;
+    margin-top: auto;
+    bottom: 0;
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+    display: block;
+  }
+  .topnav.responsive .container {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 8vw;
+  }
+
+  .topnav.responsive #hidePage {
+    display: none;
+  }
+
+  .topnav.responsive a.top-left {
+    left: 0;
+    font-size: 12vw;
+  }
+}
