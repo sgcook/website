@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bio Sara Cook</title>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <link rel="stylesheet" href="Style\Bio.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="wrap">
+      <ul class="topnav" id="myTopnav">
+        <li>
+          <a href="./index.html" class="top-left" id="Sara">Sara Cook</a>
+        </li>
+        <li>
+          <a href="./Alexander_Technique.html">Alexander Technique</a>
+        </li>
+        <li>
+          <a id="hidePage" href="./Bio.html">Bio</a>
+        </li>
+        <li>
+          <a href="./Cello_Teaching.html">Cello Teaching</a>
+        </li>
+        <li>
+          <a href="./Contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="./Media.html">Media</a>
+        </li>
+        <div>
+          <div class="container" onclick="showNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </ul>
+
+      <section class="bioPhoto">
+        <img src="Images\IMG_0409-2.jpg" alt="Sara with cello" />
+        <p class="photoBy">&copy; Darran McDonnell</p>
+      </section>
+
+      <section>
+        <h2>Bio</h2>
+        <p class="about">
+          Sara Gui Cook is a cellist and Alexander Technique teacher based out
+          of Glasgow, Scotland. She is finishing her MA in Chamber Music and
+          MMus in Cello Performance at the Royal Conservatoire of Scotland,
+          where she is studying with Alison Wells. In the Spring of 2018, Sara
+          graduated with her Bachelors of Music in Cello Performance from the
+          Boston Conservatory at Berklee with Rhonda Rider. Committed to sharing
+          her knowledge and love of chamber music, Sara has been mentoring
+          younger chamber groups at the RCS for the past two years.
+        </p>
+        <p class="about">
+          She was awarded the Mary D Adams Prize for Chamber Music at the RCS in
+          the Spring of 2020. She also placed 1st in the Mabel Glover String
+          Quartet Competition at the RCS in the spring of 2020 and received
+          Highly Commended (2nd Prize) in the Governors Chamber Music
+          Competition at the RCS in 2019. Sara has had the opportunity to take
+          part in workshops with the RSNO, Manchester Collective, and the
+          Brodsky Quartet.
+        </p>
+        <p class="about">
+          Sara became a certified Alexander Technique teacher in the Spring of
+          2018. She graduated from Boston Conservatory at Berklee’s 1,600 hour
+          Alexander Technique Teacher Training Course. Since Sara’s training,
+          she has taught students privately both in person and online. In
+          addition to her private teaching, she has taught seminars with the
+          Boston Conservatory at Berklee instrumental department and Point
+          CounterPoint’s adult workshops. Sara enjoys spending her free time
+          baking and hiking in the mountains and hills of Scotland.
+        </p>
+      </section>
+
+      <script>
+        function showNav() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; Sara Cook</p>
+    </footer>
+  </body>
+</html>
